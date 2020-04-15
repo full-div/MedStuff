@@ -141,8 +141,8 @@
                   <div class="col-md-8 bottom-border">
                     <h1 class="title title-blog">Compito di realtà</h1>
                     <p>L'impero romano è lo <a>Stato romano</a> consolidatosi nell'<a>area euromediterranea</a> tra il I secolo a.C. e il V secolo d.C.</p>
-                    <p>Le due date che generalmente identificano l'inizio e la fine di un'età statuale unica sono il 27 a.C., primo anno del <a>principato di Ottaviano</a>, con il conferimento del titolo di <a>Augusto</a>, e il 395 allorquando, alla morte di <a>Teodosio I</a>, l'impero viene suddiviso in<br> una parte occidentale e in una orientale.</p>
-                    <p>L'<a>Impero romano d'Occidente</a> si fa terminare per convenzione nel 476, anno in cui <a>Odoacre</a> depone l'ultimo imperatore legittimo, <a>Romolo Augustolo</a>. La vita dell'<a>Impero romano d'Oriente</a> si potrarrà invece fino al momento della <a>conquista di Costantinopoli</a> da parte degli <a>Ottomani</a>nel 1453.</p>
+                    <p>Le due date che generalmente identificano l'inizio e la fine di un'età statuale unica sono il 27 a.C., primo anno del <a>principato di Ottaviano</a>, con il conferimento del titolo di <a>Augusto</a>, e il 395 allorquando, alla morte di <a>Teodosio I</a>, l'impero viene suddiviso in una parte occidentale e in una orientale.</p>
+                    <p>L'<a>Impero romano d'Occidente</a> si fa terminare per convenzione nel 476, anno in cui <a>Odoacre</a> depone l'ultimo imperatore legittimo, <a>Romolo Augustolo</a>. La vita dell'<a>Impero romano d'Oriente</a> si potrarrà invece fino al momento della <a>conquista di Costantinopoli</a> da parte degli <a>Ottomani</a> nel 1453.</p>
                     <p>Pur non essendo il più vasto impero mai esistito, quello di <a>Roma</a> è considerato il più grande per gestione e qualità del territorio, organizzazione sociopolitica, e per l'importante segno lasciato nella storia dell'umanità. In tutti i territori sui quali estesero i propri <a>confini</a>, i romani costruirono città, strade, ponti, acquedotti, fortificazioni, esportando ovunque il loro modello di civiltà e al contempo assimilando le popolazioni e civiltà assoggettate, in un processo così profondo che per secoli ancora, dopo la fine dell'impero, que-<br>ste genti continuarono a definirsi "romane".</p>
                     <p>La civiltà nata sulle rive del <a>Tevere</a>, cresciuta e diffusasi in <a>epoca repubblicana</a> e infine sviluppatasi pienamente in <a>età imperiale</a>, è alla base della <a>civiltà occidentale</a></p>
                 </div>
@@ -489,72 +489,22 @@
 
 </div> <!-- wrapper -->
 
-    <script src="../../assets/js/jquery.js" type="text/javascript"></script>
-	<script src="../../assets/js/jquery-ui.custom.min.js" type="text/javascript"></script>
-	<script src="../../bootstrap3/js/bootstrap.js" type="text/javascript"></script>
+<script src="assets/js/jquery.js" type="text/javascript"></script>
+<script src="assets/js/jquery-ui.custom.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.js" type="text/javascript"></script>
 
-	<!--  Plugins -->
-	<script src="../../assets/js/gsdk-checkbox.js"></script>
-	<script src="../../assets/js/gsdk-morphing.js"></script>
-	<script src="../../assets/js/gsdk-radio.js"></script>
-	<script src="../../assets/js/gsdk-bootstrapswitch.js"></script>
-	<script src="../../assets/js/bootstrap-select.js"></script>
-	<script src="../../assets/js/bootstrap-datepicker.js"></script>
-	<script src="../../assets/js/chartist.min.js"></script>
-  <script src="../../assets/js/jquery.tagsinput.js"></script>
-
-	<!-- GSDK Pro functions -->
-	<script src="../../assets/js/get-shit-done.js"></script>
-
-    <script type="text/javascript">
-        var big_image;
-
-        var params_url = '';
-
-       var parallax = function() {
-            var current_scroll = $(this).scrollTop();
-
-            oVal = ($(window).scrollTop() / 3);
-            big_image.css('top',oVal);
-        };
-
-        function getUrlParameter(sParam){
-            var sPageURL = window.location.search.substring(1);
-            var sURLVariables = sPageURL.split('&');
-            for (var i = 0; i < sURLVariables.length; i++)
-            {
-                var sParameterName = sURLVariables[i].split('=');
-                if (sParameterName[0] == sParam){
-                    return sParameterName[1];
-                }
-            }
-        }
+<!--  Plugins -->
+<script src="../../assets/js/gsdk-checkbox.js"></script>
+<script src="../../assets/js/gsdk-morphing.js"></script>
+<script src="../../assets/js/gsdk-radio.js"></script>
+<script src="../../assets/js/gsdk-bootstrapswitch.js"></script>
+<script src="../../assets/js/bootstrap-select.js"></script>
+<script src="../../assets/js/bootstrap-datepicker.js"></script>
+<script src="../../assets/js/chartist.min.js"></script>
 
 
-
-        function addQSParm(name, value) {
-            var re = new RegExp("([?&]" + name + "=)[^&]+", "");
-
-            function add(sep) {
-                params_url += sep + name + "=" + encodeURIComponent(value);
-            }
-
-            function change() {
-                params_url = params_url.replace(re, "$1" + encodeURIComponent(value));
-            }
-            if (params_url.indexOf("?") === -1) {
-                add("?");
-            } else {
-                if (re.test(params_url)) {
-                    change();
-                } else {
-                    add("&");
-                }
-            }
-        }
-
-
-    </script>
+<!-- GSDK Pro functions -->
+<script src="assets/js/get-shit-done.js"></script>
 
 
 <style>
@@ -669,85 +619,4 @@
     }
   }
 </style>
-<iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-469cf41adb11dc78be68c1ae7f9457a4.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><div class="collapse navbar-collapse"><ul class="nav navbar-nav">
-						<li>
-								<a href="components.html">
-										 All Components
-								</a>
-						</li>
-						<li>
-								<a href="home.html">
-										 Home
-								</a>
-						</li>
-						<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										 Blog
-										 <b class="caret"></b>
-								</a>
-								<ul class="dropdown-menu dropdown-with-icons">
-										<li>
-												<a href="blog-page.html">
-														<i class="pe-7s-comment"></i> Blog Page
-												</a>
-										</li>
-										<li>
-												<a href="blog-post.html">
-														 <i class="pe-7s-news-paper"></i> Blog Post
-												</a>
-										</li>
-									</ul>
-						</li>
-						<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										Ecommerce
-										 <b class="caret"></b>
-								</a>
-								<ul class="dropdown-menu dropdown-with-icons">
-										<li>
-												<a href="ecommerce.html">
-														 <i class="pe-7s-ticket"></i> Store Page
-												</a>
-										</li>
-										<li>
-												<a href="product-page.html">
-															<i class="pe-7s-piggy"></i> Product Page
-												</a>
-										</li>
-									</ul>
-						</li>
-						<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										More
-										<b class="caret"></b>
-									</a>
-									<ul class="dropdown-menu dropdown-with-icons">
-											<li>
-												<a href="contact-us.html">
-														 <i class="pe-7s-mail-open-file"></i> Contact Us
-												</a>
-										</li>
-										<li>
-												<a href="about-us.html">
-														<i class="pe-7s-info"></i> About Us
-												</a>
-										</li>
-										<li>
-												<a href="pricing.html">
-														<i class="pe-7s-cash"></i> Pricing Page
-												</a>
-										</li>
-					<li>
-												<a href="sidebar.html">
-														<i class="pe-7s-menu"></i> Sidebar Menu
-												</a>
-										</li>
-										<li>
-												<a href="#">
-														<i class="pe-7s-gift"></i> More (soon)
-												</a>
-										</li>
-									</ul>
-						</li>
-						<li><a href="https://www.creative-tim.com/product/get-shit-done-pro" class="">Buy this Kit!</a></li>
-			 </ul></div></body></html>
+</body></html>
