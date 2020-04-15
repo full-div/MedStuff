@@ -1417,7 +1417,7 @@ input.ct-red + span + label + span.switch-right {
   padding: 0;
 }
 .tooltip.top .tooltip-inner:after {
-  border-top: 11px solid #FAE6A4;
+  border-top: 11px solid #A5FAF5;
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
   bottom: -10px;
