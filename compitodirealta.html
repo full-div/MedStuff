@@ -140,9 +140,11 @@
                <div class="row">
                   <div class="col-md-8 bottom-border">
                     <h1 class="title title-blog">Compito di realtà</h1>
-                    L'impero romano è lo <a>Stato romano</a> consolidatosi nell'<a>area euromediterranea</a> tra il I secolo a.C. e il V secolo d.C.<br>
-                    Le due date che generalmente identificano l'inizio e la fine di<br> un'età statuale unica sono il 27 a.C., primo anno del <a>principato<br> di Ottaviano</a>, con il conferimento del titolo di <a>Augusto</a>, e il 395<br> allorquando, alla morte di <a>Teodosio I</a>, l'impero viene suddiviso in<br> una parte occidentale e in una orientale. L'<a>Impero romano d'Occi-<br>dente</a> si fa terminare per convenzione nel 476,. anno in cui <a>Odoa-<br>cre</a> depone l'ultimo imperatore legittimo, <a>Romolo Augustolo</a>. La<br> vita dell'<a>Impero romano d'Oriente</a> si potrarrà invece fino al mo-<br>mento della <a>conquista di Costantinopoli</a> da parte degli <a>Ottomani</a><br> nel 1453.<br>
-                    Pur non essendo il più vasto impero mai esistito, quello di <a>Roma</a> è<br> considerato il più grande per gestione e qualità del territorio, or-<br>ganizzazione sociopolitica, e per l'importante segno lasciato nella<br> storia dell'umanità. In tutti i territori sui quali estesero i propri <a>con-<br>fini</a>, i romani costruirono città, strade, ponti, acquedotti, fortifica-<br>zioni, esportando ovunque il loro modello di civiltà e al contempo<br> assimilando le popolazioni e civiltà assoggettate, in un processo<br> così profondo che per secoli ancora, dopo la fine dell'impero, que-<br>ste genti continuarono a definirsi "romane". La civiltà nata sulle ri-<br>ve del <a>Tevere</a>, cresciuta e diffusasi in <a>epoca repubblicana</a> e infine<br> sviluppatasi pienamente in <a>età imperiale</a>, è alla base della <a>civiltà<br> occidentale</a>
+                    <p>L'impero romano è lo <a>Stato romano</a> consolidatosi nell'<a>area euromediterranea</a> tra il I secolo a.C. e il V secolo d.C.</p>
+                    <p>Le due date che generalmente identificano l'inizio e la fine di un'età statuale unica sono il 27 a.C., primo anno del <a>principato di Ottaviano</a>, con il conferimento del titolo di <a>Augusto</a>, e il 395 allorquando, alla morte di <a>Teodosio I</a>, l'impero viene suddiviso in<br> una parte occidentale e in una orientale.</p>
+                    <p>L'<a>Impero romano d'Occidente</a> si fa terminare per convenzione nel 476, anno in cui <a>Odoacre</a> depone l'ultimo imperatore legittimo, <a>Romolo Augustolo</a>. La vita dell'<a>Impero romano d'Oriente</a> si potrarrà invece fino al momento della <a>conquista di Costantinopoli</a> da parte degli <a>Ottomani</a>nel 1453.</p>
+                    <p>Pur non essendo il più vasto impero mai esistito, quello di <a>Roma</a> è considerato il più grande per gestione e qualità del territorio, organizzazione sociopolitica, e per l'importante segno lasciato nella storia dell'umanità. In tutti i territori sui quali estesero i propri <a>confini</a>, i romani costruirono città, strade, ponti, acquedotti, fortificazioni, esportando ovunque il loro modello di civiltà e al contempo assimilando le popolazioni e civiltà assoggettate, in un processo così profondo che per secoli ancora, dopo la fine dell'impero, que-<br>ste genti continuarono a definirsi "romane".</p>
+                    <p>La civiltà nata sulle rive del <a>Tevere</a>, cresciuta e diffusasi in <a>epoca repubblicana</a> e infine sviluppatasi pienamente in <a>età imperiale</a>, è alla base della <a>civiltà occidentale</a></p>
                 </div>
 
                 <div class="col-md-3 col-md-offset-1">
@@ -499,8 +501,7 @@
 	<script src="../../assets/js/bootstrap-select.js"></script>
 	<script src="../../assets/js/bootstrap-datepicker.js"></script>
 	<script src="../../assets/js/chartist.min.js"></script>
-    <script src="../../assets/js/jquery.tagsinput.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="../../assets/js/jquery.tagsinput.js"></script>
 
 	<!-- GSDK Pro functions -->
 	<script src="../../assets/js/get-shit-done.js"></script>
@@ -509,52 +510,6 @@
         var big_image;
 
         var params_url = '';
-
-        $().ready(function(){
-            responsive = $(window).width();
-
-            $(window).on('scroll', gsdk.checkScrollForTransparentNavbar);
-
-            if (responsive >= 768){
-                big_image = $('.parallax-image').find('img');
-
-                $(window).on('scroll',function(){
-                    parallax();
-                });
-            }
-
-            var coupon = getUrlParameter('coupon');
-            var ref = getUrlParameter('ref');
-
-            has_param = 0;
-
-            $('[rel="tooltip"]').tooltip();
-
-            if(coupon){
-                addQSParm("coupon", coupon);
-            }
-            if(ref){
-                addQSParm("ref", ref);
-            }
-
-            if(coupon){
-                $('#buyButton').html('Buy now with 25% Discount');
-            }
-
-            if(ref || coupon){
-                kit_link = $(".navbar-brand").attr('href');
-                $(".navbar-brand").attr('href', kit_link + params_url);
-
-                $('.navbar-right a').each(function(){
-                    href = $(this).attr('href');
-                    if(href != '#'){
-                        $(this).attr('href',href + params_url);
-                    }
-                });
-            }
-
-
-        });
 
        var parallax = function() {
             var current_scroll = $(this).scrollTop();
@@ -598,47 +553,11 @@
             }
         }
 
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-46172202-1', 'auto');
-      ga('send', 'pageview');
-
 
     </script>
 
-    <script type="text/javascript">
-  (function() {
-    window._pa = window._pa || {};
-    // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
-    // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
-    // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
-    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
-    pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.marinsm.com/serve/56026dc590a7b5bf54000030.js";
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
-  })();
-</script>
-
 
 <style>
-  #ofBar {
-    background: #de2e2e;
-    text-align: left;
-    z-index: 999999999;
-    font-size: 16px;
-    color: #fff;
-    padding: 18px 5%;
-    font-weight: 400;
-    display: block;
-    position: relative;
-    top: 0px;
-    box-shadow: 0 6px 13px -4px rgba(0, 0, 0, 0.25);
-  }
-  #ofBar b {
-    font-size: 15px !important;
-  }
   #count-down {
     display: initial;
     padding-left: 10px;
