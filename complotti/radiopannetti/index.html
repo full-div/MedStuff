@@ -15,7 +15,7 @@
 <script type="text/javascript" src="https://radiopanetti.it/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
 </head>
 
-<body class="post-template-default single single-post postid-1893 single-format-standard wp-custom-logo menuStyle1 menuContained static-header elementor-default">
+<body class="post-template-default single single-post postid-1893 single-format-standard wp-custom-logo menuStyle1 menuContained static-header elementor-default" onload="myVideo()">
 
 <link href="https://play.radiopanetti.it/assets/rpplaysans/stylesheet.css" rel="stylesheet">
 <link href="https://play.radiopanetti.it/assets/icons/logo/style.css" rel="stylesheet">
@@ -55,10 +55,16 @@
 
 	<div id="content" class="site-content">
 	<div class="container">
-		<video width="1080" height="640" autoplay class="attachment-airi-720 size-airi-720 wp-post-image" >
+		<video id="vid" width="1080" height="640" autoplay muted loop class="attachment-airi-720 size-airi-720 wp-post-image" onclick="myVideo()">
 			<source src="assets/img/Brain.mp4" type="video/mp4">
 				Il tuo browser non supporta i video oppure aggiornati!!!!
 	</video>
+	<script>
+	function myVideo() {
+		document.getElementById('vid').play();
+		document.getElementById('vid').muted = false;
+	}
+	</script>
     <div>
 	<div id="primary" class="content-area layout-default col-lg-8" style="margin-left:16%;">
 		<main id="main" class="site-main">
