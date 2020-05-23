@@ -15,6 +15,7 @@
 <body class="sections-page sidebar-collapse">
   <div class="section section-header cd-section" id="headers" style="padding-top:0px; padding-bottom:0px;">
     <div class="header-4">
+      <span id="foo"></span>
       <div class="header-wrapper">
         <div class="page-header" style="background-color:white;">
           <div class="video-image" style="background-image: url('./assets/anteprima.png')"></div>
@@ -39,7 +40,7 @@
   function cliccato() {
     document.getElementById("pulsantone").style.display = "none";
 		document.getElementById('video-source').muted = false;
-    document.getElementById('video-source').scrollIntoView();
+    document.getElementById('foo').scrollIntoView();
   };
   function showPause() {
     document.getElementById("pulsantone").style.display = "contents";
