@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" class=" cssanimations"><head>
+<html lang="it">
+<head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no" name="viewport">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
@@ -12,15 +13,13 @@
 </head>
 
 <body class="sections-page sidebar-collapse">
-  <div class="section section-header cd-section" id="headers">
+  <div class="section section-header cd-section" id="headers" style="padding-top:0px; padding-bottom:0px;">
     <div class="header-4">
       <div class="header-wrapper">
-        <div class="page-header header-video">
-          <div class="filter filter-danger"></div>
-          <!-- We show the video image placeholder instead of the video for small devices  -->
+        <div class="page-header" style="background-color:white;">
           <div class="video-image" style="background-image: url('./assets/anteprima.png')"></div>
-          <video id="video-source" preload="auto" loop="loop" muted="muted" volume="0">
-            <source src="./assets/video.mp4" type="video/mp4"> Video not supported
+          <video onclick="showPause()" id="video-source" preload="auto" muted="muted" volume="0">
+            <source src="./assets/video.mp4" type="video/mp4"> Video non supportato!
           </video>
           <div class="content-center">
             <div class="container upper-container text-center">
@@ -35,10 +34,15 @@
       </div>
     </div>
   </div>
+  </body>
 <script>
   function cliccato() {
     document.getElementById("pulsantone").style.display = "none";
-  }
+		document.getElementById('video-source').muted = false;
+  };
+  function showPause() {
+    document.getElementById("pulsantone").style.display = "contents";
+  };
 
 </script>
 
@@ -69,4 +73,4 @@
   <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
   <script src="https://demos.creative-tim.com/paper-kit-2-pro/assets/js/paper-kit.min.js?v=2.3.0" type="text/javascript"></script>
 
-</body></html>
+</html>
