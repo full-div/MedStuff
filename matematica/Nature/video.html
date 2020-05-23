@@ -18,7 +18,7 @@
       <div class="header-wrapper">
         <div class="page-header" style="background-color:white;">
           <div class="video-image" style="background-image: url('./assets/anteprima.png')"></div>
-          <video name="Video" onclick="showPause()" id="video-source" preload="auto" muted="muted" volume="0">
+          <video onclick="showPause()" id="video-source" preload="auto" muted="muted" volume="0">
             <source src="./assets/video.mp4" type="video/mp4"> Video non supportato!
           </video>
           <div class="content-center">
@@ -27,7 +27,7 @@
               </div>
               <br>
               <!--  We hide the play button on small devices -->
-              <button id="pulsantone" type="button" data-video="video-source" data-toggle="video" class="btn btn-lg btn-neutral" onclick="cliccato()" href="#Video"><i class="fa fa-play"></i> Play Video</button>
+              <button id="pulsantone" type="button" data-video="video-source" data-toggle="video" class="btn btn-lg btn-neutral" onclick="cliccato()" ><i class="fa fa-play"></i> Play Video</button>
             </div>
           </div>
         </div>
@@ -39,6 +39,7 @@
   function cliccato() {
     document.getElementById("pulsantone").style.display = "none";
 		document.getElementById('video-source').muted = false;
+    document.getElementById('video-source').scrollIntoView();
   };
   function showPause() {
     document.getElementById("pulsantone").style.display = "contents";
